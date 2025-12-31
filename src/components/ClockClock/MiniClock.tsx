@@ -46,7 +46,7 @@ const MiniClock = ({ hourAngle, minuteAngle, size = 60 }: MiniClockProps) => {
   }, [hourAngle, minuteAngle]);
 
   const handLength = size * 0.35;
-  const handWidth = 6;
+  const handWidth = 8;
 
   return (
     <div 
