@@ -46,7 +46,7 @@ const MiniClock = ({ hourAngle, minuteAngle, size = 60 }: MiniClockProps) => {
   }, [hourAngle, minuteAngle]);
 
   const handLength = size * 0.35;
-  const handWidth = 3;
+  const handWidth = 6;
 
   return (
     <div 
@@ -61,7 +61,7 @@ const MiniClock = ({ hourAngle, minuteAngle, size = 60 }: MiniClockProps) => {
           width: handWidth,
           height: handLength,
           bottom: '50%',
-          left: `calc(50% - ${handWidth / 4}px)`,
+          left: `calc(50% - ${handWidth / 2}px)`,
         }}
       />
       {/* Minute hand */}
@@ -72,7 +72,7 @@ const MiniClock = ({ hourAngle, minuteAngle, size = 60 }: MiniClockProps) => {
           width: handWidth,
           height: handLength,
           bottom: '50%',
-          left: `calc(50% - ${handWidth / 4}px)`,
+          left: `calc(50% - ${handWidth / 2}px)`,
         }}
       />
       {/* Center dot */}
